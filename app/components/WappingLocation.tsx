@@ -70,7 +70,7 @@ export default function WappingLocation() {
           <figure>
             <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem] bg-[#f2f2f2] sm:rounded-[1.75rem]">
               <Image
-                src="/locations/prospect-of-whitby.jpg"
+                src="/muse/wapping/635px-Wapping_prospect_of_whitby_1-min.jpg"
                 alt="The Prospect of Whitby in Wapping"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
