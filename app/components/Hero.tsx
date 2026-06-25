@@ -1,6 +1,7 @@
 import FeaturedOn from "./FeaturedOn";
 import HeroIntro from "./HeroIntro";
 import LessonOptions from "./LessonOptions";
+import MuseEngagement from "./MuseEngagement";
 import PianoLessonDetails from "./PianoLessonDetails";
 import PricingOptions from "./PricingOptions";
 import StudentResults from "./StudentResults";
@@ -31,6 +32,7 @@ export default function Hero() {
       <HeroIntro />
       <FeaturedOn />
       <LessonOptions />
+      <MuseEngagement />
       <Testimonials />
       <PianoLessonDetails />
       <StudentResults />
