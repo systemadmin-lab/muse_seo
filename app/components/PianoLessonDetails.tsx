@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const linkClass =
   "font-bold text-[#2a2c2f] underline decoration-[#2a2c2f]/25 underline-offset-4 transition hover:text-[#ff8900]";
+const bookingUrl = "https://musecool.com/uk/prices/#popmake-70158";
 
 const textBlockClass = "mx-auto w-full max-w-[34rem] text-left lg:mx-0";
 const sectionLabelClass = "text-sm font-black text-[#2a2c2f]";
@@ -34,7 +35,9 @@ export default function PianoLessonDetails() {
             </div>
 
             <div className={textBlockClass}>
-              <p className={sectionLabelClass}>Our tutors</p>
+              <p className={`${sectionLabelClass} text-[#ff8900]`}>
+                Our tutors
+              </p>
 
               <h2
                 id="piano-details-title"
@@ -129,15 +132,7 @@ export default function PianoLessonDetails() {
                 </p>
 
                 <p>
-                  New students can receive a free keyboard for the first month,
-                  plus access to our{" "}
-                  <a
-                    href="https://soundcloud.com/lycaeum-music/bbc-radio-london-interview-26jan21"
-                    className={linkClass}
-                  >
-                    BBC-featured
-                  </a>{" "}
-                  children&apos;s music course.
+                  New students can receive a free keyboard for the first month.
                 </p>
               </div>
             </div>
@@ -146,7 +141,7 @@ export default function PianoLessonDetails() {
 
         <div className="mt-14 flex justify-center">
           <a
-            href="#booking"
+            href={bookingUrl}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-[#ff8900] px-8 py-3 text-sm font-black text-white shadow-lg shadow-[#ff8900]/20 transition hover:bg-[#e87700] focus:outline-none focus:ring-2 focus:ring-[#19191b] focus:ring-offset-2"
           >
             Meet your tutor

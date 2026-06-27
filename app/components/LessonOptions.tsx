@@ -3,6 +3,7 @@ import { ArrowRight, Info, Music2 } from "lucide-react";
 
 const linkClass =
   "font-black text-[#1d7da0] underline decoration-[#1d7da0]/35 underline-offset-4 transition hover:text-[#155e78]";
+const bookingUrl = "https://musecool.com/uk/prices/#popmake-70158";
 
 const benefits = [
   {
@@ -40,24 +41,9 @@ const benefits = [
     ),
   },
   {
-    title: "Free music course access",
-    description: (
-      <>
-        Free access to one of our highly-acclaimed,{" "}
-        <a
-          href="https://soundcloud.com/lycaeum-music/bbc-radio-london-interview-26jan21"
-          className={linkClass}
-        >
-          BBC-featured
-        </a>{" "}
-        music courses for children.
-      </>
-    ),
-  },
-  {
-    title: "Piano sourcing help",
+    title: "Need help finding a piano?",
     description:
-      "Help sourcing a piano, and receive a free piano keyboard for your first month (T&Cs apply).",
+      "We can help - and you’ll receive a free keyboard for your first month (T&Cs apply).",
   },
 ];
 
@@ -101,7 +87,7 @@ export default function LessonOptions() {
             </h2>
 
             <p className="mt-6 text-lg font-semibold leading-8 text-[#363b40] sm:mt-8 sm:text-xl sm:leading-9">
-              From &pound;15 for online sessions and &pound;40 for sessions at
+              From &pound;17 for online sessions and &pound;44 for sessions at
               your home, we offer the most affordable prices for high-standard
               teaching.
             </p>
@@ -121,7 +107,7 @@ export default function LessonOptions() {
                     <strong className="font-black text-[#2d3033]">
                       {benefit.title}
                     </strong>{" "}
-                    <span aria-hidden="true">&mdash;</span>{" "}
+                    <span aria-hidden="true">-</span>{" "}
                     {benefit.description}
                   </span>
                 </li>
@@ -138,7 +124,7 @@ export default function LessonOptions() {
                 <strong className="font-black text-[#2d3033]">
                   Satisfaction guarantee
                 </strong>{" "}
-                <span aria-hidden="true">&mdash;</span> If you don&apos;t like
+                <span aria-hidden="true">-</span> If you don&apos;t like
                 your first lesson we&apos;ll refund the entire fee!
               </span>
             </p>
@@ -147,7 +133,7 @@ export default function LessonOptions() {
 
         <div className="mt-10 flex justify-center lg:mt-12">
           <a
-            href="#booking"
+            href={bookingUrl}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-[#ff8900] px-7 py-3 text-sm font-black text-white shadow-lg shadow-[#ff8900]/20 transition hover:bg-[#e87700] focus:outline-none focus:ring-2 focus:ring-[#19191b] focus:ring-offset-2"
           >
             Meet your tutor

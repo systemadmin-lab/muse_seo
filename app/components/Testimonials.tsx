@@ -23,12 +23,12 @@ const reviewColumns = [
     reviews: [
       {
         quote:
-          "The online sessions are warm, interactive, and easy for children to follow. The teacher kept everyone engaged from start to finish.",
+          "The online sessions are warm, interactive, and easy for children to follow. The Muse summaries helped us see what was covered and what to practise next.",
         author: "Jane F, 36, London",
       },
       {
         quote:
-          "Our son came away smiling after every class. He explored different styles of music and connected quickly with his teacher.",
+          "Our son came away smiling after every class, and The Muse made it easy to keep the momentum going between lessons with clear practice guidance.",
         author: "Jeremy C, 40, London",
       },
     ],
@@ -54,14 +54,17 @@ export default function Testimonials() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-title"
-      className="relative z-10 bg-[#fbf8f6] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+      className="relative z-10 my-10 bg-[#fbf8f6] px-4 py-16 sm:my-12 sm:px-6 sm:py-20 lg:my-16 lg:px-8"
     >
       <div className="mx-auto max-w-7xl">
-        <h2 id="testimonials-title" className="sr-only">
+        <h2
+          id="testimonials-title"
+          className="type-section-title mx-auto max-w-3xl text-center font-black text-[#19191b]"
+        >
           Parent testimonials
         </h2>
 
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-20">
           {reviewColumns.map((column) => (
             <div key={column.linkLabel} className="flex flex-col gap-9">
               {column.reviews.map((review) => (

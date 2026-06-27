@@ -3,29 +3,31 @@ import Image from "next/image";
 const pricingPlans = [
   {
     title: "Online",
-    range: "£16 - £27",
+    range: "£17 - £28",
     image: "/icons/pricing/image.png",
     imageAlt: "Student taking an online piano lesson at home",
     imageClass: "object-cover object-center",
     rows: [
-      { duration: "30min", price: "£16" },
-      { duration: "45min", price: "£21" },
-      { duration: "60min", price: "£27" },
+      { duration: "30min", price: "£17" },
+      { duration: "45min", price: "£22" },
+      { duration: "60min", price: "£28" },
     ],
   },
   {
-    title: "In person at your home",
-    range: "£42 - £56",
+    title: "Offline at your home",
+    range: "£44 - £59",
     image: "/icons/pricing/inperson.jpg",
     imageAlt: "In-person piano lesson at home",
     imageClass: "object-cover object-center",
     rows: [
-      { duration: "30min", price: "£42" },
-      { duration: "45min", price: "£50" },
-      { duration: "60min", price: "£56" },
+      { duration: "30min", price: "£44" },
+      { duration: "45min", price: "£52" },
+      { duration: "60min", price: "£59" },
     ],
   },
 ] as const;
+
+const bookingUrl = "https://musecool.com/uk/prices/#popmake-70158";
 
 function PriceCard({ plan }: { plan: (typeof pricingPlans)[number] }) {
   return (
@@ -67,7 +69,7 @@ function PriceCard({ plan }: { plan: (typeof pricingPlans)[number] }) {
 
         <div className="mt-7 flex justify-center">
           <a
-            href="#booking"
+            href={bookingUrl}
             className="inline-flex min-h-12 min-w-[12rem] items-center justify-center rounded-md bg-[#ff8900] px-7 py-3 text-sm font-black text-white shadow-lg shadow-[#ff8900]/20 transition hover:bg-[#e87700] focus:outline-none focus:ring-2 focus:ring-[#19191b] focus:ring-offset-2"
           >
             Meet your tutor

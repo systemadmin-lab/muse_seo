@@ -1,3 +1,4 @@
+import CallToAction from "./CallToAction";
 import FeaturedOn from "./FeaturedOn";
 import HeroIntro from "./HeroIntro";
 import LessonOptions from "./LessonOptions";
@@ -33,6 +34,7 @@ export default function Hero() {
       <FeaturedOn />
       <LessonOptions />
       <MuseEngagement />
+      <CallToAction />
       <Testimonials />
       <PianoLessonDetails />
       <StudentResults />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function DownloadIcon() {
   return (
@@ -118,22 +119,22 @@ export default function Footer() {
 
               <div className="mt-5 flex gap-2.5">
                 <a
-                  href="#"
-                  aria-label="Instagram"
+                  href="https://www.instagram.com/musecool"
+                  aria-label="MuseCool on Instagram"
                   className="flex size-8 items-center justify-center rounded-full border border-[#e4d4bf] bg-white text-[#594338] shadow-[0_2px_6px_rgba(0,0,0,0.03)] transition-all hover:scale-105 hover:text-[#ff8900]"
                 >
                   <InstagramIcon />
                 </a>
                 <a
-                  href="#"
-                  aria-label="Facebook"
+                  href="https://www.facebook.com/search/top?q=MuseCool"
+                  aria-label="MuseCool on Facebook"
                   className="flex size-8 items-center justify-center rounded-full border border-[#e4d4bf] bg-white text-[#594338] shadow-[0_2px_6px_rgba(0,0,0,0.03)] transition-all hover:scale-105 hover:text-[#006184]"
                 >
                   <FacebookIcon />
                 </a>
                 <a
-                  href="#"
-                  aria-label="YouTube"
+                  href="https://www.youtube.com/results?search_query=MuseCool"
+                  aria-label="MuseCool on YouTube"
                   className="flex size-8 items-center justify-center rounded-full border border-[#e4d4bf] bg-white text-[#594338] shadow-[0_2px_6px_rgba(0,0,0,0.03)] transition-all hover:scale-105 hover:text-[#ff8900]"
                 >
                   <YoutubeIcon />
@@ -168,14 +169,14 @@ export default function Footer() {
                     ♬
                   </span>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  href="/#muse-engagement"
                   className="type-button relative flex w-full max-w-[240px] items-center justify-center gap-2 overflow-hidden rounded-md bg-[#ff8900] px-5 py-3 font-bold text-white shadow-lg shadow-[#ff8900]/20 transition-all hover:-translate-y-0.5 hover:bg-[#e87700]"
                 >
                   <DownloadIcon />
                   <span className="relative z-10">Download The Muse</span>
                   <div className="absolute inset-0 translate-y-full bg-white/20 transition-transform duration-300 ease-out group-hover:translate-y-0" />
-                </a>
+                </Link>
               </div>
 
               <div className="mt-1 flex flex-col gap-2">
@@ -183,8 +184,8 @@ export default function Footer() {
                   Available on iOS and Android
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  <a
-                    href="#"
+                  <Link
+                    href="/#muse-engagement"
                     className="flex items-center gap-2 rounded-lg bg-[#19191b] px-3 py-1.5 text-white transition-colors hover:bg-[#2b2b2f]"
                   >
                     <AppleIcon />
@@ -196,10 +197,10 @@ export default function Footer() {
                         App Store
                       </div>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    href="/#muse-engagement"
                     className="flex items-center gap-2 rounded-lg bg-[#19191b] px-3 py-1.5 text-white transition-colors hover:bg-[#2b2b2f]"
                   >
                     <PlayStoreIcon />
@@ -211,19 +212,28 @@ export default function Footer() {
                         Google Play
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="type-label mt-auto flex gap-4 border-t border-[#e4d4bf]/70 pt-4 font-bold uppercase tracking-widest text-[#8a7567]">
-              <a href="#" className="transition-colors hover:text-[#ff8900]">
+              <a
+                href="https://musecool.com/uk/privacy-policy/"
+                className="transition-colors hover:text-[#ff8900]"
+              >
                 Privacy
               </a>
-              <a href="#" className="transition-colors hover:text-[#ff8900]">
+              <a
+                href="https://musecool.com/uk/terms-and-conditions/"
+                className="transition-colors hover:text-[#ff8900]"
+              >
                 Terms
               </a>
-              <a href="#" className="transition-colors hover:text-[#ff8900]">
+              <a
+                href="mailto:info@musecool.com"
+                className="transition-colors hover:text-[#ff8900]"
+              >
                 Contact
               </a>
             </div>

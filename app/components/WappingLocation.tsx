@@ -6,6 +6,7 @@ const bodyCopy =
 
 const linkClass =
   "font-semibold text-[#006184] transition-colors hover:text-[#ff8900]";
+const bookingUrl = "https://musecool.com/uk/prices/#popmake-70158";
 
 export default function WappingLocation() {
   return (
@@ -59,7 +60,7 @@ export default function WappingLocation() {
 
               <p>
                 For more information please{" "}
-                <a href="#contact" className={linkClass}>
+                <a href="mailto:info@musecool.com" className={linkClass}>
                   contact us
                 </a>
                 .
@@ -93,7 +94,7 @@ export default function WappingLocation() {
 
         <div className="mt-10 flex justify-center sm:mt-12">
           <a
-            href="#booking"
+            href={bookingUrl}
             className="inline-flex min-h-12 items-center justify-center gap-3 rounded-md bg-[#ff8900] px-8 py-3 text-base font-black text-white shadow-lg shadow-[#ff8900]/20 transition hover:-translate-y-0.5 hover:bg-[#e87700] focus:outline-none focus:ring-2 focus:ring-[#19191b] focus:ring-offset-2 sm:min-h-14 sm:px-10 sm:text-lg"
           >
             Meet your tutor

@@ -29,9 +29,8 @@ export default function MuseEngagement() {
           id="muse-engagement-title"
           className="mx-auto max-w-[44rem] text-4xl font-black leading-tight tracking-normal text-[#19191b] sm:text-5xl lg:text-[3.35rem]"
         >
-          Presenting{" "}
-          <span className="text-[#ff8900]">The Muse</span> Elevating the
-          student learning experience.
+          Meet <span className="text-[#ff8900]">The Muse</span> and get more
+          from every piano lesson!
         </h2>
 
         <div className="relative mx-auto mt-10 flex min-h-[72svh] w-full max-w-[42rem] items-center justify-center sm:mt-12 sm:min-h-[440px] lg:min-h-[660px]">
@@ -60,9 +59,9 @@ export default function MuseEngagement() {
         </div>
 
         <p className="mx-auto mt-8 max-w-5xl text-center text-xl font-bold leading-snug tracking-normal text-[#19191b] sm:mt-10 sm:text-2xl">
-          It understands your lesson in real time - then creates summaries &
-          progress reports, as well as interactive practice sessions for your
-          students - all based on what you have taught them that week!
+          The Muse follows the lesson as it happens and gives you a clear
+          summary, progress updates and practice guidance afterwards - all based
+          on what your tutor has taught.
         </p>
       </div>
     </section>
