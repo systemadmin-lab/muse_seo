@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Piano } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const navLinks = [
   { href: "/#find-tutor", label: "Wapping tutors" },
@@ -19,13 +20,18 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           href="/#find-tutor"
-          className="flex min-w-0 items-center gap-2 text-[#21190f]"
+          className="flex min-w-0 items-center text-[#21190f]"
           aria-label="MuseCool piano lessons in Wapping"
         >
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#21190f] text-white">
-            <Piano className="h-5 w-5" aria-hidden="true" />
-          </span>
-          <span className="truncate text-xl font-black">MuseCool</span>
+          <Image
+            src="/nav/musemonke-site-logo.png.bv_resized_mobile.png.bv.webp"
+            alt="MuseCool"
+            width={387}
+            height={120}
+            priority
+            sizes="154px"
+            className="h-12 w-auto"
+          />
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">

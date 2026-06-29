@@ -23,6 +23,7 @@ export default function PianoLessonDetails() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:gap-14">
+          {/*
           <div className="grid items-center gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
             <div className={imageClass}>
               <Image
@@ -71,14 +72,15 @@ export default function PianoLessonDetails() {
               </p>
             </div>
           </div>
+          */}
 
           <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
             <div className={`${textBlockClass} order-2 lg:order-1`}>
               <p className={sectionLabelClass}>Flexible learning</p>
 
-              <h3 className={headingClass}>
+              <h2 id="piano-details-title" className={headingClass}>
                 Piano lessons online
-              </h3>
+              </h2>
 
               <div className={bodyClass}>
                 <p>
