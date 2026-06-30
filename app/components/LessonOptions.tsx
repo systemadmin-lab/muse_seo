@@ -124,7 +124,7 @@ export default function LessonOptions() {
                 <strong className="font-black text-[#2d3033]">
                   Satisfaction guarantee
                 </strong>{" "}
-                <span aria-hidden="true">-</span> If you don&apos;t like
+                <span aria-hidden="true">- </span> If you don&apos;t like
                 your first lesson we&apos;ll refund the entire fee!
               </span>
             </p>
