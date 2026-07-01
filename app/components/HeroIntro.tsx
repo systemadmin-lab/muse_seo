@@ -12,9 +12,9 @@ export default function HeroIntro() {
     <section
       id="find-tutor"
       aria-labelledby="hero-title"
-      className="relative z-10 overflow-hidden bg-[#fbf8f6] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14"
+      className="relative z-10 overflow-hidden bg-[#fbf8f6] px-4 py-8 sm:px-6 sm:py-10 lg:min-h-[calc(100svh-4rem)] lg:px-8 lg:py-0"
     >
-      <div className="mx-auto grid min-h-[min(760px,calc(100svh-4rem))] max-w-7xl items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="mx-auto grid min-h-[min(760px,calc(100svh-4rem))] max-w-7xl items-center gap-8 lg:min-h-[calc(100svh-4rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-0">
         <div className="relative z-10 order-2 flex max-w-2xl flex-col items-start text-left lg:order-1">
           <div className="inline-flex items-center gap-2 rounded-md border border-[#d8c7ae] bg-white/80 px-3 py-2 text-sm font-black text-[#4d382c] shadow-sm backdrop-blur">
             <MapPin className="h-4 w-4 text-[#006184]" aria-hidden="true" />
@@ -82,10 +82,21 @@ export default function HeroIntro() {
             </span>
             No payment today, only pay after your 1st lesson is completed.
           </div>
+
+          <div className="mt-6 w-full max-w-[16rem] overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)]">
+            <Image
+              src="/kidsafe/kidsage.jpeg"
+              alt="Kidsafe certification"
+              width={1600}
+              height={704}
+              sizes="256px"
+              className="h-auto w-full"
+            />
+          </div>
         </div>
 
-        <div className="relative order-1 min-h-[330px] w-full sm:min-h-[430px] lg:order-2 lg:min-h-[640px]">
-          <div className="absolute inset-y-0 left-0 right-0 overflow-hidden rounded-[2rem] border border-white/70 bg-[#f2eee9] shadow-[0_32px_90px_rgba(25,25,27,0.18)] sm:rounded-[2.75rem] lg:left-5">
+        <div className="relative order-1 min-h-[330px] w-full sm:min-h-[430px] lg:absolute lg:inset-y-0 lg:right-0 lg:order-2 lg:min-h-0 lg:w-1/2">
+          <div className="hero-diagonal-image absolute inset-0 overflow-hidden rounded-[2rem] border border-white/70 bg-[#f2eee9] shadow-[0_32px_90px_rgba(25,25,27,0.18)] sm:rounded-[2.75rem] lg:rounded-none lg:border-0 lg:shadow-none">
             <Image
               src="/hero/hero2.jpg"
               alt="Young piano student smiling during a lesson"
@@ -95,28 +106,6 @@ export default function HeroIntro() {
               className="object-cover object-[58%_54%]"
             />
           </div>
-
-          <div className="absolute bottom-5 left-5 hidden w-[13rem] overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)] sm:w-[16rem] lg:block">
-            <Image
-              src="/kidsafe/kidsage.jpeg"
-              alt="Kidsafe certification"
-              width={1600}
-              height={704}
-              sizes="(min-width: 640px) 256px, 208px"
-              className="h-auto w-full"
-            />
-          </div>
-        </div>
-
-        <div className="order-3 w-1/2 max-w-48 overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)] lg:hidden">
-          <Image
-            src="/kidsafe/kidsage.jpeg"
-            alt="Kidsafe certification"
-            width={1600}
-            height={704}
-            sizes="(min-width: 640px) 384px, 100vw"
-            className="h-auto w-full"
-          />
         </div>
       </div>
     </section>
