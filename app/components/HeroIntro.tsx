@@ -15,7 +15,7 @@ export default function HeroIntro() {
       className="relative z-10 overflow-hidden bg-[#fbf8f6] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14"
     >
       <div className="mx-auto grid min-h-[min(760px,calc(100svh-4rem))] max-w-7xl items-center gap-8 lg:grid-cols-2 lg:gap-12">
-        <div className="relative z-10 flex max-w-2xl flex-col items-start text-left">
+        <div className="relative z-10 order-2 flex max-w-2xl flex-col items-start text-left lg:order-1">
           <div className="inline-flex items-center gap-2 rounded-md border border-[#d8c7ae] bg-white/80 px-3 py-2 text-sm font-black text-[#4d382c] shadow-sm backdrop-blur">
             <MapPin className="h-4 w-4 text-[#006184]" aria-hidden="true" />
             Tower Hamlets piano tutors in E1W
@@ -34,9 +34,14 @@ export default function HeroIntro() {
           </p>
 
           <div className="mt-5 inline-flex flex-wrap items-center justify-start gap-2 rounded-md border border-[#d8c7ae] bg-white/80 px-4 py-2 text-sm font-black text-[#4d382c] shadow-sm backdrop-blur">
-            <span className="text-[#4285f4]" aria-hidden="true">
-              G
-            </span>
+            <Image
+              src="/google.png"
+              alt=""
+              width={20}
+              height={20}
+              aria-hidden="true"
+              className="h-5 w-5 object-contain"
+            />
             <span>Google</span>
             <span className="text-[#19191b]">4.9</span>
             <span
@@ -65,7 +70,7 @@ export default function HeroIntro() {
             </a>
           </div>
 
-          <div className="mt-6 inline-flex max-w-xl items-center gap-2 rounded-md bg-[#19191b] px-4 py-3 text-sm font-bold leading-6 text-white">
+          <div className="mt-6 inline-flex max-w-xl items-center gap-2 rounded-md bg-[#006184] px-4 py-3 text-sm font-bold leading-6 text-white">
             <span
               className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#73d7f1]/20"
               aria-hidden="true"
@@ -79,7 +84,7 @@ export default function HeroIntro() {
           </div>
         </div>
 
-        <div className="relative min-h-[430px] w-full lg:min-h-[640px]">
+        <div className="relative order-1 min-h-[330px] w-full sm:min-h-[430px] lg:order-2 lg:min-h-[640px]">
           <div className="absolute inset-y-0 left-0 right-0 overflow-hidden rounded-[2rem] border border-white/70 bg-[#f2eee9] shadow-[0_32px_90px_rgba(25,25,27,0.18)] sm:rounded-[2.75rem] lg:left-5">
             <Image
               src="/hero/hero2.jpg"
@@ -91,7 +96,7 @@ export default function HeroIntro() {
             />
           </div>
 
-          <div className="absolute bottom-5 left-5 w-[13rem] overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)] sm:w-[16rem]">
+          <div className="absolute bottom-5 left-5 hidden w-[13rem] overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)] sm:w-[16rem] lg:block">
             <Image
               src="/kidsafe/kidsage.jpeg"
               alt="Kidsafe certification"
@@ -101,6 +106,17 @@ export default function HeroIntro() {
               className="h-auto w-full"
             />
           </div>
+        </div>
+
+        <div className="order-3 w-1/2 max-w-48 overflow-hidden rounded-md border border-white/70 bg-white shadow-[0_18px_45px_rgba(25,25,27,0.14)] lg:hidden">
+          <Image
+            src="/kidsafe/kidsage.jpeg"
+            alt="Kidsafe certification"
+            width={1600}
+            height={704}
+            sizes="(min-width: 640px) 384px, 100vw"
+            className="h-auto w-full"
+          />
         </div>
       </div>
     </section>
